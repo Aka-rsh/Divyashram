@@ -4,8 +4,6 @@ function setLanguage(lang) {
   });
 }
 
-
-
 const topNav = document.querySelector('.top-nav');
 const mainHeader = document.querySelector('.main-header');
 
@@ -18,4 +16,14 @@ window.addEventListener('scroll', () => {
     mainHeader.style.top = '30px'; // same as initial .top-nav height
   }
 });
+
+function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.style.display = (sidebar.style.display === 'block') ? 'none' : 'block';
+}
+
+  function toggleMobileMenu() {
+    const navLinks = document.querySelector('.main-header nav .links');
+    navLinks.classList.toggle('show');
+  }
 

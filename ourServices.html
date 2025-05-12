@@ -6,48 +6,74 @@
   <title>Thank You - Shri Divyansh Trust</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
 
-  <header id="head">
-    <!-- Contact Information Section -->
-    <nav class="top-nav">
-      <ul class="order">
-        <li>HelpLine Number: +91 7007094655</li>
-        <li>For Any query Call: +91 7007094655 (24*7)</li>
-        <li>Whatsapp number: +91 7007094655</li>
-        <li>Travel & Stay: +91 7007094655</li>
-      </ul>
-    </nav>
+<!-- Language Toggle -->
+<div class="lang-toggle">
+  <button onclick="setLanguage('en')">English</button>
+  <button onclick="setLanguage('hi')">हिंदी</button>
+</div>
 
-    <!-- Main Header Section -->
-    <div class="main-header">
-      <a href="#">
-        <img src="./logo.png" alt="Divyaashram Logo" class="logo" />
-      </a>
+<!-- Sidebar Menu -->
+<div class="sidebar" id="sidebar">
+  <ul class="sidebar-links">
+    <li><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="./aboutus.html"><i class="fas fa-users"></i> About Us</a></li>
+    <li><a href="./ourServices.html"><i class="fas fa-hand-holding-heart"></i> Our Services</a></li>
+    <li><a href="#"><i class="fas fa-phone-alt"></i> Contact</a></li>
+    <li><a href="#"><i class="fas fa-lock"></i> Privacy Policy</a></li>
+    <li><a href="#"><i class="fas fa-file-signature"></i>Terms of Use</a></li>
+  </ul>
+</div>
 
-      <!-- Navigation Links -->
-      <nav>
-        <ul class="links">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./aboutus.html">About Us</a></li>
-          <li><a href="./ourServices.html" class="active">Our Services</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Use</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<!-- Main Header -->
+<header id="head">
+  <!-- Contact Information Section -->
+  <nav class="top-nav">
+    <ul class="order">
+      <li><b>HelpLine Number: +91 7007094655</b></li>
+      <li><b>For Any query Call: +91 7007094655 (24*7)</b></li>
+      <li><b>Whatsapp number: +91 7007094655</b></li>
+      <li><b>Travel & Stay: +91 7007094655</b></li>
+    </ul>
+  </nav>
 
-  <section class="img">
+  <!-- Main Header Section -->
+<div class="main-header">
+  <!-- Logo -->
+  <a href="./index.html">
+    <img src="./logo.png" alt="Divyaashram Logo" class="logo" />
+  </a>
+
+  <!-- Sidebar Toggle Button (Hamburger Icon) -->
+  <div class="sidebar-toggle" onclick="toggleMobileMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- Navigation Links -->
+  <nav>
+    <ul class="links">
+      <li><a href="./index.html" >Home</a></li>
+      <li><a href="./aboutus.html">About Us</a></li>
+      <li><a href="./ourServices.html" class="active">Our Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Use</a></li>
+    </ul>
+  </nav>
+</div>
+</header>
+
+
+<section class="img">
   <div class="overlay">
     <h1>Welcome to श्री दिव्याश्रम </h1>
   </div>
 </section>
 
 
-  
   <section class="thankyou-container">
     <h1>Thank you for contacting <span class="trust-name">SHRI DIVYASHRAM TRUST KASHI DARSHAN!</span></h1>
     

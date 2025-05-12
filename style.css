@@ -45,7 +45,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(45deg, #333333, #ff5722);
-  padding: 4px 5%;
+  padding: 8px 5%;
   z-index: 998;
   transition: top 0s; /* no animation */
 }
@@ -91,6 +91,46 @@ body {
   background: #ebc20c; /* your yellow underline color */
     transition: width 0.3s ease, background 0.3s ease;
 }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 220px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding-top: 100px;
+}
+/* Hide sidebar toggle by default */
+.sidebar-toggle {
+  display: none;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-links li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-bottom: 1px solid #555;
+  transition: background 0.3s;
+}
+
+.sidebar-links li a:hover {
+  background-color: #444;
+}
+
 
 
 /* Layout */
@@ -350,15 +390,6 @@ body {
   text-decoration: underline;
 }
 
-/* About us  */
-/* General page styling */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  background-color: #f9f9f9;
-  color: #333;
-}
-
 /* About Us Section */
 .about-section {
   text-align: center;
@@ -526,8 +557,6 @@ hr {
 }
 
 
-
-
 /* Responsive */
 /* header */
 @media (max-width: 768px) {
@@ -555,15 +584,85 @@ hr {
   }
 }
 
+@media (max-width: 768px) {
+  /* Hide top nav completely */
+  /* .top-nav {
+    display: none;
+  } */
+
+  /* Main header layout in mobile */
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    position: relative;
+    margin-top: 50px; /* Adjust based on the top nav height */
+  }
+
+  /* Logo settings */
+  .main-header .logo {
+    max-width: 100px;
+    height: auto;
+    margin-left: 200px; /* Add margin-left for spacing from the edge */
+  }
+
+  /* Sidebar toggle icon (hamburger) in the center-left */
+  .sidebar-toggle {
+    display: block;
+    font-size: 24px;
+    color: hsl(41, 84%, 46%);
+    cursor: pointer;
+    position: absolute;
+    left: 10px;  /* Align to the left */
+    top: 50%;  /* Vertically center the icon */
+    transform: translateY(-50%); /* Adjust the position */
+  }
+
+  /* Hide nav links initially */
+  nav .links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #d1ccccb9;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    font-weight: bold;
+  }
+
+  /* Show nav links when active */
+  nav .links.show {
+    display: flex;
+  }
+
+  nav .links li {
+    padding: 10px 20px;
+  }
+
+  nav .links li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+  }
+}
+
+
 /* Main */
 @media (max-width: 768px) {
   .main-content {
     flex-direction: column;
     padding: 30px 5%;
     text-align: center;
+    height: auto; /* Let height adjust naturally */
   }
 
-  .intro-text, .intro-image {
+  .intro-text,
+  .intro-image {
     flex: 1 1 100%;
   }
 
@@ -574,7 +673,33 @@ hr {
   .intro-text p {
     font-size: 1rem;
   }
+
+  .intro-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-image {
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .btns {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .btns button {
+    width: 80%;
+    max-width: 300px;
+  }
 }
+
 
 /* Responsive toggle positioning */
 @media (max-width: 768px) {
