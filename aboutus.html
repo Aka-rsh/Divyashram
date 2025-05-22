@@ -5,16 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us - Leadership Team</title>
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./aboutustyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
-
-<!-- Language Toggle -->
-<div class="lang-toggle">
-  <button onclick="setLanguage('en')">English</button>
-  <button onclick="setLanguage('hi')">हिंदी</button>
-</div>
 
 <!-- Sidebar Menu -->
 <div class="sidebar" id="sidebar">
@@ -22,7 +17,7 @@
     <li><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
     <li><a href="./aboutus.html"><i class="fas fa-users"></i> About Us</a></li>
     <li><a href="./ourServices.html"><i class="fas fa-hand-holding-heart"></i> Our Services</a></li>
-    <li><a href="#"><i class="fas fa-phone-alt"></i> Contact</a></li>
+    <li><a href="./contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
     <li><a href="#"><i class="fas fa-lock"></i> Privacy Policy</a></li>
     <li><a href="#"><i class="fas fa-file-signature"></i>Terms of Use</a></li>
   </ul>
@@ -58,8 +53,8 @@
       <li><a href="./index.html" >Home</a></li>
       <li><a href="./aboutus.html" class="active">About Us</a></li>
       <li><a href="./ourServices.html">Our Services</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="./contact.html" >Contact</a></li>
+      <li><a href="#">Gallery</a></li>
       <li><a href="#">Terms of Use</a></li>
     </ul>
   </nav>
@@ -67,33 +62,180 @@
 </header>
 
 
-<section class="img">
+<section class="img" id="hero">
   <div class="overlay">
-    <h1>Welcome to श्री दिव्याश्रम </h1>
+    <h1>Welcome to श्री दिव्याश्रम</h1>
+  </div>
+
+  <div class="dots">
+    <span class="dot active" onclick="changeImage(0)"></span>
+    <span class="dot" onclick="changeImage(1)"></span>
+    <span class="dot" onclick="changeImage(2)"></span>
   </div>
 </section>
 
-  <section class="about-section">
-    <h2>Meet Our Leadership Team</h2>
-    <div class="team-grid">
-      <div class="team-card">
-        <h3>SHRI VIRENDRA KUMAR</h3>
-        <p>President</p>
-      </div>
-      <div class="team-card">
-        <h3>SHRI SANJAY KESHARI</h3>
-        <p>General Secretary</p>
-      </div>
-      <div class="team-card">
+<section class="about-section">
+  <h2>Meet Our Leadership Team</h2>
+  <div class="team-grid">
+    
+<div class="team-card">
+  <img src="./Profiles/Virendra Srivastava.jpg" alt="Virendra Kumar" />
+  <div class="card-content">
+    <h3>SHRI VIRENDRA KUMAR</h3>
+    <p class="position">President</p>
+
+    <!-- Short Description -->
+    <p class="description short">
+      Shri Virendra Kumar Srivastava, born on September 2, 1976, is a highly accomplished professional with a strong academic background in business, commerce, journalism, and finance. He holds an MBA from UPTU (UP College, Varanasi), an M.Com and PG Diploma in Financial Management from Purvanchal University, and an MJMC from Sanskrit University, Varanasi (2025). A native of Varanasi, he combines deep academic insight with extensive experience in administration and leadership. He also holds certifications in computer applications from reputed institutions including Jetking Varanasi.
+    </p>
+
+    <!-- Full Description -->
+    <div class="description full">
+      <p>
+        🔷 <strong>Full Biography</strong><br><br>
+        Shri Virendra Kumar Srivastava, born on September 2, 1976, is an accomplished professional, social contributor, and spiritual leader based in Varanasi, Uttar Pradesh. He is the son of the late Shri Ghanshyam Lal Srivastava and resides at C.K. 65/268 D, Badi Piyarikala Chowk, Varanasi – 221001.
+      </p>
+
+      <p><strong>🎓 Academic Background</strong></p>
+      <ul>
+        <li>MBA – U.P. Technical University, Lucknow (UP College, Varanasi) – 2002</li>
+        <li>M.Com – Purvanchal University, Jaunpur – 1997</li>
+        <li>PG Diploma in Financial Management – Purvanchal University – 1998</li>
+        <li>MJMC – Sanskrit University, Varanasi – 2025</li>
+        <li>Computer Certification – Swift Course (Computer Bureau, 1996) and Jetking Varanasi</li>
+      </ul>
+
+      <p><strong>🧘‍♂️ Social & Spiritual Leadership</strong></p>
+      <ul>
+        <li><strong>Devashram Trust</strong> (2000–2020): Spiritual and social leader, part-time, 12,000+ nationwide volunteers</li>
+        <li><strong>Divyashram Trust</strong> (President, since 2024): Leading 6,000+ members in India for social and spiritual service</li>
+      </ul>
+
+      <p><strong>💼 Professional Career</strong></p>
+      <ul>
+        <li><strong>Pooja Associates / Ankoot Supplements Pvt. Ltd.</strong> (Founder, since 2015): Distribution and production, 40+ team, ₹10 Cr turnover</li>
+        <li><strong>Dishnet Wireless Ltd. (AIRCEL)</strong> (2013–2015): Regional Sales Manager</li>
+        <li><strong>Reliance Communications</strong> (2007–2013): Prepaid Lead (Manager)</li>
+        <li><strong>Wipro Consumer Care Ltd.</strong> (2002–2007): Senior Sales Officer</li>
+      </ul>
+
+      <p>
+        Shri Virendra Srivastava’s journey reflects a rare blend of academic brilliance, entrepreneurial spirit, and community-driven leadership. As the current President of Divyashram Trust, he continues to inspire change and promote holistic development across India.
+      </p>
+    </div>
+
+    <!-- Toggle Button -->
+    <button class="view-more-btn" onclick="toggleDescription(this)">View More</button>
+  </div>
+</div>
+
+
+<div class="team-card">
+  <img src="./Profiles/Sanjay Keshari.jpg" alt="Sanjay Keshari" />
+  <div class="card-content">
+    <h3>SHRI SANJAY KESHARI</h3>
+    <p class="position">Finance Head</p>
+
+    <!-- Short Description -->
+    <p class="description short">
+        Shri Sanjay Keshari is a respected finance expert, sales strategist, and reputed business figure with a long-standing career in India's corporate and financial landscape. With a strong academic foundation and decades of professional experience, he continues to leave a meaningful impact in his field.
+    </p>
+
+    <!-- Full Description -->
+    <div class="description full">
+      <p>
+        🔷 <strong>Full Biography</strong><br><br>
+        Shri Sanjay Keshari is a respected finance expert, sales strategist, and reputed business figure with a long-standing career in India's corporate and financial landscape. With a strong academic foundation and decades of professional experience, he continues to leave a meaningful impact in his field.
+      </p>
+
+      <p><strong>🎓 Academic Qualifications</strong></p>
+      <ul>
+        <li>Master of Commerce (M.Com) from Purvanchal University, Jaunpur – 1997</li>
+        <li>SWIFT Computer Course – Computer Bureau, Varanasi – 1996</li>
+      </ul>
+
+      <p><strong>🌟 Reputation</strong><br>
+        Shri Sanjay Keshari is also recognized as a reputed and influential businessman, known for his integrity, leadership, and strategic insight in financial operations and market growth. His commitment to excellence continues to inspire peers and professionals in the industry.
+      </p>
+    </div>
+
+    <!-- Toggle Button -->
+    <button class="view-more-btn" onclick="toggleDescription(this)">View More</button>
+  </div>
+</div>
+
+
+
+    <div class="team-card">
+      <img src="./Profiles/random.webp" alt="Siddharth Pandey" />
+      <div class="card-content">
         <h3>SHRI SIDDHARTH PANDEY</h3>
-        <p>Treasurer</p>
-      </div>
-      <div class="team-card">
-        <h3>SHRI AJAY KUSHWAHA</h3>
-        <p>Vice President</p>
+        <p class="position">Treasurer</p>
+        <p class="description">Ensures financial transparency and accountability with his strong background in finance.</p>
       </div>
     </div>
-  </section>
+
+<div class="team-card" >
+  <img src="./Profiles/Ajay Kushwaha.jpg" alt="Shri Ajay" />
+  <div class="card-content">
+    <h3>SHRI AJAY KUSHWAHA</h3>
+    <p class="position">Finance Head</p>
+
+    <!-- Short Description -->
+    <p class="description short">
+      Shri Ajay is a highly skilled finance professional with a strong background in business management and commerce. He holds an MBA from UPTU, Lucknow and an M.Com from Purvanchal University, Jaunpur. With over two decades of experience, he currently serves as the Finance Head at a multinational company in India. Additionally, Ajay has been deeply involved in spiritual and social work, actively contributing to various organizations across India.
+    </p>
+
+    <!-- Full Description -->
+    <div class="description full">
+      <p>
+        🔷 <strong>Full Biography</strong><br><br>
+        Shri Ajay is an experienced finance professional, spiritual leader, and social contributor, known for his long-standing service in the corporate sector and commitment to the betterment of society. With a rich academic background and significant experience in business, he continues to make meaningful contributions in both the professional and spiritual realms.
+      </p>
+
+      <p><strong>🎓 Academic Qualifications</strong></p>
+      <ul>
+        <li>Master of Business Administration (MBA) from UPTU, Lucknow (UP College, Varanasi) – 2002</li>
+        <li>Master of Commerce (M.Com) from Purvanchal University, Jaunpur – 1997</li>
+        <li>SWIFT Computer Course from Computer Bureau, Varanasi – 1996</li>
+        <li>JETKING Varanasi</li>
+      </ul>
+
+      <p><strong>💼 Professional Experience</strong></p>
+      <ul>
+        <li><strong>Position:</strong> Finance Head</li>
+        <li><strong>Organization:</strong> Multinational Company, India</li>
+        <li><strong>Since:</strong> December 2002</li>
+        <li><strong>Role:</strong> Regional Sales Manager</li>
+      </ul>
+
+      <p><strong>🌟 Social & Spiritual Leadership</strong></p>
+      <ul>
+        <li><strong>Devashram Trust</strong><br>
+          <i>Part-time member since December 2000 – 2020</i><br>
+          Focus: Spiritual and social service<br>
+          Team Size: 12,000+ members across India
+        </li>
+        <li><strong>Divyashram Trust</strong><br>
+          <i>Vice President since December 2024</i><br>
+          Focus: Spiritual guidance, social work, and community development<br>
+          Team Size: 6,000+ members across India
+        </li>
+      </ul>
+
+      <p>
+        Shri Ajay’s work reflects a balanced blend of professional excellence and a deep commitment to social and spiritual causes, inspiring countless individuals across India.
+      </p>
+    </div>
+    <!-- Toggle Button -->
+    <button class="view-more-btn" onclick="toggleDescription(this)">View More</button>
+  </div>
+</div>
+
+
+  </div>
+</section>
+
 
 <section id="Footer">
   <footer>
@@ -151,7 +293,9 @@
   </footer>
 </section>
 
-<script src="./set.js"></script>
+  <!-- Language Switch Script -->
+<script src="./dot.js"></script>
+<script src="./form.js"></script>
 
 </body>
 </html>

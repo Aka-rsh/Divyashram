@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Divyashram</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./services.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- Sidebar Menu -->
+<div class="sidebar" id="sidebar">
+  <ul class="sidebar-links">
+    <li><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="./aboutus.html"><i class="fas fa-users"></i> About Us</a></li>
+    <li><a href="./ourServices.html"><i class="fas fa-hand-holding-heart"></i> Our Services</a></li>
+    <li><a href="./contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
+    <li><a href="#"><i class="fas fa-lock"></i> Privacy Policy</a></li>
+    <li><a href="#"><i class="fas fa-file-signature"></i>Terms of Use</a></li>
+  </ul>
+</div>
+
+<!-- Main Header -->
+<header id="head">
+  <!-- Contact Information Section -->
+  <nav class="top-nav">
+    <ul class="order">
+      <li><b>HelpLine Number: +91 7007094655</b></li>
+      <li><b>For Any query Call: +91 7007094655 (24*7)</b></li>
+      <li><b>Whatsapp number: +91 7007094655</b></li>
+      <li><b>Travel & Stay: +91 7007094655</b></li>
+    </ul>
+  </nav>
+
+  <!-- Main Header Section -->
+<div class="main-header">
+  <!-- Logo -->
+  <a href="./index.html">
+    <img src="./logo.png" alt="Divyaashram Logo" class="logo" />
+  </a>
+
+  <!-- Sidebar Toggle Button (Hamburger Icon) -->
+  <div class="sidebar-toggle" onclick="toggleMobileMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- Navigation Links -->
+  <nav>
+    <ul class="links">
+      <li><a href="./index.html"  class="active">Home</a></li>
+      <li><a href="./aboutus.html">About Us</a></li>
+      <li><a href="./ourServices.html" class="active">Our Services</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Terms of Use</a></li>
+    </ul>
+  </nav>
+</div>
+</header>
+
+
+<section class="img" id="hero">
+  <div class="overlay">
+    <h1>Welcome to श्री दिव्याश्रम</h1>
+  </div>
+
+  <div class="dots">
+    <span class="dot active" onclick="changeImage(0)"></span>
+    <span class="dot" onclick="changeImage(1)"></span>
+    <span class="dot" onclick="changeImage(2)"></span>
+  </div>
+</section>
+
+
+<section class="homepage product-scroll-area">
+  <h1>Welcome To Divyashram Hotel– Services</h1>
+
+  <div class="quote-box">
+    <p>
+      “At <strong>Divyashram</strong>, your stay is more than just a room — it's a soulful experience in the heart of Kashi.
+      Whether you're a pilgrim seeking peace, a traveler exploring spiritual India, or a family visiting Varanasi, we offer a clean, affordable, and welcoming space that feels like home. 
+      With all modern amenities, spiritual surroundings, and easy booking through WhatsApp, <strong>your comfort is our priority</strong>. From sunrise <em>aarti</em> at the ghats to calm nights under the sacred skies, Divyashram lets you live the true spirit of Varanasi — simply, peacefully, and beautifully.”
+    </p>
+  </div>
+
+  <div class="product">
+    <article class="left">
+      <img src="./vns/v1.jpg" alt="Divyashram Stay" loading="lazy">
+    </article>
+    <article class="right">
+      <h2>Stay Peacefully at Divyashram – Your Home in Kashi</h2>
+      <p>
+        Discover spiritual comfort and modern convenience at Divyashram. Nestled in the heart of Varanasi, our peaceful stay welcomes pilgrims, families, and travelers with warmth and serenity.
+      </p>
+      <a href="https://wa.me/917007094655?text=I%20want%20to%20book%20my%20stay%20at%20Divyashram" target="_blank" class="book-btn" aria-label="Book your stay at Divyashram">Book Your Stay</a>
+    </article>
+  </div>
+
+  <div class="product">
+    <article class="left">
+      <img src="./vns/v3.webp" alt="Kashi Spiritual Tour" loading="lazy">
+    </article>
+    <article class="right">
+      <h2>Experience the Soul of Kashi – Guided Spiritual Tours</h2>
+      <p>
+        Explore Varanasi’s ancient temples, ghats, and spiritual traditions with our guided tours. Perfect for first-time visitors and spiritual seekers.
+      </p>
+      <a href="https://wa.me/917007094655?text=I'm%20interested%20in%20Kashi%20spiritual%20tour" target="_blank" class="book-btn" aria-label="Book a Kashi spiritual tour">Book a Tour</a>
+    </article>
+  </div>
+
+  <div class="product">
+    <article class="left">
+      <img src="./vns/v4.webp" alt="Kashi Handicrafts" loading="lazy">
+    </article>
+    <article class="right">
+      <h2>Authentic Kashi Handicrafts & Prasad Packs</h2>
+      <p>
+        Bring home a piece of Kashi – buy handmade souvenirs, spiritual items, and prasad boxes sourced directly from local artisans.
+      </p>
+      <a href="https://wa.me/917007094655?text=I%20want%20to%20buy%20handicrafts%20or%20prasad%20items" target="_blank" class="book-btn" aria-label="Order Kashi Handicrafts or Prasad">Order Now</a>
+    </article>
+  </div>
+
+  <div class="product">
+    <article class="left">
+      <img src="./vns/p1.jpg" alt="Puja at Kashi" loading="lazy">
+    </article>
+    <article class="right">
+      <h2>Book a Puja or Ritual at the Holy Ganga</h2>
+      <p>
+        Need help performing Ganga Aarti, Asthi Visarjan, or other rituals? Let us arrange experienced purohits and everything you need, with dignity and devotion.
+      </p>
+      <a href="https://wa.me/917007094655?text=I%20want%20to%20book%20a%20puja%20or%20ritual%20service%20in%20Kashi" target="_blank" class="book-btn" aria-label="Book a puja or ritual at the Ganga">Book a Ritual</a>
+    </article>
+  </div>
+
+  <div class="product">
+    <article class="left">
+      <img src="./vns/p2.jpg" alt="Kashi Learning Sessions" loading="lazy">
+    </article>
+    <article class="right">
+      <h2>Learn the Wisdom of Vedas & Bhagavad Gita</h2>
+      <p>
+        Join spiritual sessions, Sanskrit shloka classes, and guided meditations with local gurus—online or offline at Divyashram.
+      </p>
+      <a href="https://wa.me/917007094655?text=I%20want%20to%20join%20spiritual%20learning%20sessions" target="_blank" class="book-btn" aria-label="Join Vedic learning sessions at Divyashram">Join a Session</a>
+    </article>
+  </div>
+
+  <div class="product">
+    <article class="left">
+      <img src="./vns/p3.jpg" alt="Volunteer at Divyashram" loading="lazy">
+    </article>
+    <article class="right">
+      <h2>Be a Volunteer – Serve the Cause of Divinity</h2>
+      <p>
+        Join us in managing the ashram, teaching children, helping the elderly, or organizing spiritual events. Serve with your skills and heart.
+      </p>
+      <a href="https://wa.me/917007094655?text=I%20want%20to%20volunteer%20at%20Divyashram" target="_blank" class="book-btn" aria-label="Apply to volunteer at Divyashram">Apply to Volunteer</a>
+    </article>
+  </div>
+</section>
+
+
+
+  <section class="hotel-header">
+    <h1>Stay Peacefully at Divyashram – Your Home in Kashi – Budget to Premium Hotels in Kashi</h1>
+    <p>Curated list of trusted hotels near temples & ghats. Choose comfort and convenience with our affordable packages.</p>
+  </section>
+
+  <section class="hotel-cards">
+    <div class="card">
+      <h3>Budget Room – ₹499/night</h3>
+      <p>Affordable, clean room near ghat</p>
+      <p>Ideal for solo pilgrims or budget travelers</p>
+    </div>
+
+    <div class="card">
+      <h3>Standard Room – ₹999/night</h3>
+      <p>Comfortable stay with essential amenities</p>
+      <p>Great for families and groups</p>
+    </div>
+
+    <div class="card">
+      <h3>Premium Room – ₹1999/night</h3>
+      <p>Ganga view, walkable distance to Kashi Vishwanath Mandir</p>
+      <p>AC, WiFi, and breakfast included</p>
+    </div>
+  </section>
+
+  <div style="text-align: center; margin: 2rem 0;">
+    <a href="https://www.oyorooms.com" target="_blank" class="book-btn">Book via OYO</a>
+    <a href="https://www.goibibo.com" target="_blank" class="book-btn">Goibibo</a>
+    <a href="https://www.trivago.in" target="_blank" class="book-btn">Trivago</a>
+    <a href="https://www.makemytrip.com" target="_blank" class="book-btn">MMT</a>
+  </div>
+
+<!-- <section class="enquiry-form">
+  <h2>Request Custom Package / Ganga View Room</h2>
+  <form 
+    name="hotelEnquiryForm"
+    method="POST"
+    target="_blank"
+    action="https://docs.google.com/forms/d/e/1FAIpQLSfKliaDcA-MU2-koEHog8G_0rocdNvL_ZbzPC5DiYwdhZdSWg/formResponse"
+    onsubmit="alert('Thank you! Your request has been submitted.');"
+  >
+    <div class="form-row">
+      <input type="text" name="entry.2005620554" placeholder="Full Name" required />
+      <input type="email" name="entry.1045781291" placeholder="Email Address" required />
+    </div>
+
+    <div class="form-row">
+      <input type="tel" name="entry.1166974658" placeholder="Phone Number" required />
+    </div>
+
+    <textarea
+      name="entry.839337160"
+      placeholder="Preferred stay dates, package type (₹499/₹999/₹1999), or special request"
+    ></textarea>
+
+    <button type="submit">Submit Request</button>
+  </form>
+</section> -->
+
+
+<section id="Footer">
+  <footer>
+    <div class="footer-container">
+      
+      <!-- Logo and About -->
+      <div class="footer-col">
+        <img src="./logo.png" alt="Divyashram Logo" class="footer-logo" />
+        <p>
+          Join us on our journey of spiritual discovery. Follow our channels and stay connected for updates and sacred experiences.
+        </p>
+      </div>
+
+ <!-- Quick Contact -->
+<div class="footer-col contact-info">
+  <h3>Quick Contact</h3>
+  <ul>
+    <li><i class="fa-solid fa-map-pin"></i> Best Travel Agency in Varanasi</li>
+    <li><i class="fa-solid fa-phone"></i>7007094655, 9415273451</li>
+    <li>
+      <i class="fa-regular fa-envelope"></i>
+      <a href="mailto:sridevashramtrust@gmail.com">sridevashramtrust@gmail.com</a>
+    </li>
+  </ul>
+</div>
+
+
+      <!-- Opening Hours -->
+      <div class="footer-col">
+        <h3>Opening Hours</h3>
+        <p><strong>Open Hours (Mon - Sat):</strong> 24×7 Available</p>
+      </div>
+
+      <!-- Subscription + Social -->
+      <div class="footer-col">
+        <h3>Booking Enquiries</h3>
+        <form>
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit"><i class="fas fa-arrow-right"></i></button>
+        </form>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/917007094655" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="footer-bottom">
+      <p>© 2025 | All Rights Reserved. Designed by Akarsh Srivastava.</p>
+    </div>
+  </footer>
+</section>
+
+  <script src="./set.js"></script>
+  <script src="./form.js"></script>
+
+<body>
+</html>
+
+

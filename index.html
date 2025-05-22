@@ -22,7 +22,7 @@
     <li><a href="./index.html"><i class="fas fa-home"></i> Home</a></li>
     <li><a href="./aboutus.html"><i class="fas fa-users"></i> About Us</a></li>
     <li><a href="./ourServices.html"><i class="fas fa-hand-holding-heart"></i> Our Services</a></li>
-    <li><a href="#"><i class="fas fa-phone-alt"></i> Contact</a></li>
+    <li><a href="./contact.html"><i class="fas fa-phone-alt"></i> Contact</a></li>
     <li><a href="#"><i class="fas fa-lock"></i> Privacy Policy</a></li>
     <li><a href="#"><i class="fas fa-file-signature"></i>Terms of Use</a></li>
   </ul>
@@ -55,11 +55,11 @@
   <!-- Navigation Links -->
   <nav>
     <ul class="links">
-      <li><a href="./index.html" class="active">Home</a></li>
+      <li><a href="./index.html"  class="active">Home</a></li>
       <li><a href="./aboutus.html">About Us</a></li>
       <li><a href="./ourServices.html">Our Services</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="#">Gallery</a></li>
       <li><a href="#">Terms of Use</a></li>
     </ul>
   </nav>
@@ -67,9 +67,15 @@
 </header>
 
 
-<section class="img">
+<section class="img" id="hero">
   <div class="overlay">
-    <h1>Welcome to श्री दिव्याश्रम </h1>
+    <h1>Welcome to श्री दिव्याश्रम</h1>
+  </div>
+
+  <div class="dots">
+    <span class="dot active" onclick="changeImage(0)"></span>
+    <span class="dot" onclick="changeImage(1)"></span>
+    <span class="dot" onclick="changeImage(2)"></span>
   </div>
 </section>
 
@@ -100,11 +106,33 @@
 
 
 <section class="intro-image">
-      <img src="./logo.png" alt="Divyashram Logo" class="logo-image">
-      <div class="btns">
-        <button aria-label="Connect with Divyashram">Connect with Us</button>
+  <img src="./logo.png" alt="Divyashram Logo" class="logo-image" />
+  <div class="btns">
+    <button aria-label="Connect with Divyashram" onclick="openPopup()">Connect with Us</button>
+  </div>
+</section>
+
+<!-- Popup Form -->
+<div id="formPopup" class="popup-container">
+  <div class="popup-form">
+    <span class="close-btn" onclick="closePopup()">✖</span>
+    <h2>Get in Touch</h2>
+    <form id="contactForm" name="contactForm" target="_blank"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSfKliaDcA-MU2-koEHog8G_0rocdNvL_ZbzPC5DiYwdhZdSWg/formResponse"
+      method="POST">
+      <div class="form-row">
+        <input type="text" name="entry.2005620554" placeholder="Full Name" required />
+        <input type="email" name="entry.1045781291" placeholder="Email" required />
       </div>
-    </section>
+      <div class="form-row">
+        <input type="tel" name="entry.1166974658" placeholder="Phone Number" required />
+      </div>
+      <textarea name="entry.839337160" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
   </main>
 
 <section class="s2">
@@ -260,6 +288,8 @@
 
   <!-- Language Switch Script -->
 <script src="./set.js"></script>
+<script src="./form.js"></script>
+<script src="dot.js"></script>
 
 </body>
 </html>

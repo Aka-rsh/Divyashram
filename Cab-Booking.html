@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thank You - Shri Divyansh Trust</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="services.css">
+  <title>Divyashram</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./services.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
@@ -50,9 +50,9 @@
   <!-- Navigation Links -->
   <nav>
     <ul class="links">
-      <li><a href="./index.html" >Home</a></li>
+      <li><a href="./index.html"  class="active">Home</a></li>
       <li><a href="./aboutus.html">About Us</a></li>
-      <li><a href="./ourServices.html" class="active">Our Services</a></li>
+      <li><a href="./ourServices.html">Our Services</a></li>
       <li><a href="./contact.html">Contact</a></li>
       <li><a href="#">Gallery</a></li>
       <li><a href="#">Terms of Use</a></li>
@@ -75,32 +75,83 @@
 </section>
 
 
+  <!-- Header -->
+  <header class="header">
+    <h1>Divyashram Ride</h1>
+    <p>Your Trusted Cab Partner for Local & Outstation Travel</p>
+  </header>
 
-  <section class="thankyou-container">
-    <h1>Thank you for contacting <span class="trust-name">SHRI DIVYASHRAM TRUST KASHI DARSHAN!</span></h1>
-    
-    <h2>Our Services</h2>
-    <div class="services-grid">
-      <a href="./Hotel-booking.html"><div class="service"><i class="fas fa-hotel"></i> Hotel Booking</div></a>
-      <a href="./Cab-Booking.html"><div class="service"><i class="fas fa-car"></i> Cab Booking</div></a>
-      <a href="./Tour-Packaging.html"><div class="service"><i class="fas fa-suitcase-rolling"></i> Tour Packages</div></a>
-      <a href="./Tour-Packaging.html"><div class="service"><i class="fas fa-user-tie"></i> Tour Guide</div></a>
-      <a href="./Darshan-aarti.html"><div class="service"><i class="fas fa-ticket-alt"></i> VIP Darshan Ticket</div></a>
-      <a href="./Darshan-aarti.html"><div class="service"><i class="fas fa-fire"></i> Ganga Aarti Ticket</div></a>
-      <a href="./Cruise-boat-booking.html"><div class="service"><i class="fas fa-ship"></i> Boat Booking</div></a>
-      <a href="./Cruise-boat-booking.html"><div class="service"><i class="fas fa-water"></i> Cruise Booking</div></a>
-      <a href="./Flight-Train.html"><div class="service"><i class="fas fa-plane"></i> Flight Ticket</div></a>
-      <a href="./Flight-Train.html"><div class="service"><i class="fas fa-train"></i> Train Ticket</div></a>
-    </div>
-
-    <h2>Contact Us</h2>
-    <div class="contact-info">
-      <p><strong>Company:</strong> Shri DIVYASHRAM Kashi Darshan</p>
-      <p><strong>Web:</strong> <a href="./index.html">श्री दिव्याश्रम ट्रस्ट</a></p>
-      <p><strong>Email:</strong> <a href="mailto: sridevashramtrust@gmail.com">sridevashramtrust@gmail.com</a></p>
-      <p><strong>Mobile:</strong> 7007094655, 9415273451</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Book Cabs for City & Pilgrimage Travel</h2>
+      <p>Reliable, affordable, and convenient rides at your fingertips.</p>
+      <a href="#services" class="cta-btn">View Services</a>
     </div>
   </section>
+
+  <!-- Services Section -->
+  <section class="packages" id="services">
+    <h2>Our Cab Services</h2>
+    <div class="columns">
+      <div class="column">
+        <h3>City Ride</h3>
+        <ul>
+          <li>✔ Point-to-Point (Railway/Bus/Airport)</li>
+          <li>✔ Fixed Rates</li>
+          <li>✔ Driver Contact in Advance</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Day Tour</h3>
+        <ul>
+          <li>✔ 8 Hours / 80 KM Coverage</li>
+          <li>✔ Ideal for Family Temple Visits</li>
+          <li>✔ Flexible Timings</li>
+        </ul>
+      </div>
+      <div class="column">
+        <h3>Outstation</h3>
+        <ul>
+          <li>✔ Prayagraj, Sarnath, Ayodhya</li>
+          <li>✔ One-way & Round Trips</li>
+          <li>✔ Comfortable AC Cabs</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note"> Link to <a href="https://www.olacabs.com/" target="_blank">Ola</a> | <a href="https://www.uber.com/" target="_blank">Uber</a> if you prefer app-based rides</p>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>Customer Feedback</h2>
+    <div class="testimonial">
+      <blockquote>
+        “Booked an outstation cab to Ayodhya – the car was clean, punctual, and the driver was polite.”
+        <footer>- Anjali R.</footer>
+      </blockquote>
+    </div>
+    <div class="testimonial">
+      <blockquote>
+        “Best airport pickup experience in Varanasi. Transparent pricing and smooth ride.”
+        <footer>- Ramesh K.</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta">
+    <h2>Book a Cab Now</h2>
+    <p>Instant WhatsApp Booking. Fixed Rates. Reliable Drivers.</p>
+    <a href="https://wa.me/917007094655" class="cta-btn">Book on WhatsApp</a>
+  </section>
+
+  <div class="map-integration">
+    <h3> Service Areas</h3>
+    <p>Check out our service areas on the map below:</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.406225507907!2d82.98913697477336!3d25.324146226548223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2de222363511%3A0x720ce9d306ed891a!2sANNKUT%20SUPPLEMENTS%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1747238237849!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+  </div>
+</section>
 
 
 <section id="Footer">
@@ -161,5 +212,6 @@
 
   <script src="./set.js"></script>
   <script src="./form.js"></script>
+
 </body>
 </html>

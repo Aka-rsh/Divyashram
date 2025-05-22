@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Thank You - Shri Divyansh Trust</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="services.css">
+  <title>Divyashram</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./services.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
@@ -52,8 +52,8 @@
     <ul class="links">
       <li><a href="./index.html" >Home</a></li>
       <li><a href="./aboutus.html">About Us</a></li>
-      <li><a href="./ourServices.html" class="active">Our Services</a></li>
-      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="./ourServices.html">Our Services</a></li>
+      <li><a href="./contact.html" class="active">Contact</a></li>
       <li><a href="#">Gallery</a></li>
       <li><a href="#">Terms of Use</a></li>
     </ul>
@@ -75,32 +75,60 @@
 </section>
 
 
-
-  <section class="thankyou-container">
-    <h1>Thank you for contacting <span class="trust-name">SHRI DIVYASHRAM TRUST KASHI DARSHAN!</span></h1>
-    
-    <h2>Our Services</h2>
-    <div class="services-grid">
-      <a href="./Hotel-booking.html"><div class="service"><i class="fas fa-hotel"></i> Hotel Booking</div></a>
-      <a href="./Cab-Booking.html"><div class="service"><i class="fas fa-car"></i> Cab Booking</div></a>
-      <a href="./Tour-Packaging.html"><div class="service"><i class="fas fa-suitcase-rolling"></i> Tour Packages</div></a>
-      <a href="./Tour-Packaging.html"><div class="service"><i class="fas fa-user-tie"></i> Tour Guide</div></a>
-      <a href="./Darshan-aarti.html"><div class="service"><i class="fas fa-ticket-alt"></i> VIP Darshan Ticket</div></a>
-      <a href="./Darshan-aarti.html"><div class="service"><i class="fas fa-fire"></i> Ganga Aarti Ticket</div></a>
-      <a href="./Cruise-boat-booking.html"><div class="service"><i class="fas fa-ship"></i> Boat Booking</div></a>
-      <a href="./Cruise-boat-booking.html"><div class="service"><i class="fas fa-water"></i> Cruise Booking</div></a>
-      <a href="./Flight-Train.html"><div class="service"><i class="fas fa-plane"></i> Flight Ticket</div></a>
-      <a href="./Flight-Train.html"><div class="service"><i class="fas fa-train"></i> Train Ticket</div></a>
+ <section class="py-12 px-4 md:px-16 lg:px-32" id="contact">
+    <div class="text-center mb-10">
+      <h2 class="text-4xl font-bold text-indigo-600">Contact Us</h2>
+      <p class="text-lg mt-2 text-gray-700">We’d love to hear from you!</p>
     </div>
 
-    <h2>Contact Us</h2>
-    <div class="contact-info">
-      <p><strong>Company:</strong> Shri DIVYASHRAM Kashi Darshan</p>
-      <p><strong>Web:</strong> <a href="./index.html">श्री दिव्याश्रम ट्रस्ट</a></p>
-      <p><strong>Email:</strong> <a href="mailto: sridevashramtrust@gmail.com">sridevashramtrust@gmail.com</a></p>
-      <p><strong>Mobile:</strong> 7007094655, 9415273451</p>
+    <div class="grid lg:grid-cols-2 gap-8">
+      <!-- Contact Form -->
+      <form id="contactForm" class="bg-white shadow-xl rounded-2xl p-8 space-y-6">
+        <div class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium mb-1">Name</label>
+            <input type="text" name="name" required class="w-full border border-gray-300 rounded-xl px-4 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Phone</label>
+            <input type="tel" name="phone" required class="w-full border border-gray-300 rounded-xl px-4 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Email</label>
+          <input type="email" name="email" required class="w-full border border-gray-300 rounded-xl px-4 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none">
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Message</label>
+          <textarea name="message" rows="5" required class="w-full border border-gray-300 rounded-xl px-4 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none"></textarea>
+        </div>
+        <div class="text-right">
+          <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-xl transition duration-300">Send Message</button>
+        </div>
+      </form>
+
+      <!-- Google Map -->
+      <div class="rounded-2xl overflow-hidden shadow-xl">
+        <iframe
+          class="w-full h-[400px] md:h-full"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14242.372119395263!2d81.8354219255689!3d25.440104591636012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398535614a9120b3%3A0xe426b25d2ed9ffcf!2sSangam%20Ghat%20Allahabad!5e0!3m2!1sen!2sin!4v1716375069422!5m2!1sen!2sin"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </div>
   </section>
+
+  <!-- Modal -->
+  <div id="modal" class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50">
+    <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-sm text-center space-y-4">
+      <h3 class="text-2xl font-semibold text-indigo-600">Thank You!</h3>
+      <p class="text-gray-700">Your message has been received. We’ll get back to you shortly.</p>
+      <button onclick="closeModal()" class="mt-4 px-6 py-2 bg-indigo-600 text-white rounded-xl hover:bg-indigo-700">Close</button>
+    </div>
+  </div>
+
 
 
 <section id="Footer">
@@ -159,7 +187,12 @@
   </footer>
 </section>
 
-  <script src="./set.js"></script>
-  <script src="./form.js"></script>
+
+
+  <!-- Language Switch Script -->
+<script src="./set.js"></script>
+<script src="./form.js"></script>
+<script src="dot.js"></script>
+
 </body>
 </html>
