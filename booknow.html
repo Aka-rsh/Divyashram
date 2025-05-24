@@ -6,7 +6,7 @@
   <title>Divyashram</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="./aboutustyle.css">
-  <link rel="stylesheet" href="./services.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
@@ -54,9 +54,9 @@
       <li><a href="./index.html" >Home</a></li>
       <li><a href="./aboutus.html">About Us</a></li>
       <li><a href="./ourServices.html">Our Services</a></li>
-      <li><a href="./contact.html" class="active">Contact</a></li>
+      <li><a href="./contact.html">Contact</a></li>
       <li><a href="#">Gallery</a></li>
-      <li><a href="./booknow.html">Book Now</a></li>
+      <li><a href="./booknow.html" class="active">Book Now</a></li>
     </ul>
   </nav>
 </div>
@@ -76,69 +76,136 @@
 </section>
 
 
-<section id="container">
-  <!-- Contact Form Section -->
+<section id="Booking">
+  <h1>Book Now</h1>
+  <div class="line">
+    <div class="line-card">
+      <!-- Left Image -->
+      <div class="hotel-image">
+        <img src="vns/T2.jpg" alt="Hotel Room" />
+      </div>
+
+      <!-- Right Content -->
+      <div class="hotel-details">
+        <h2>Divyashram Hotel</h2>
+        <a href="#" class="location">Varanasi | 5 km drive to Kashi Vishwanath Temple</a>
+
+        <div class="tags">
+          <span>Specific Ambience</span>
+          <span>Restaurant</span>
+          <span>& more</span>
+        </div>
+
+        <div class="features">
+          <p><strong style="color: red;">Couple Friendly</strong></p>
+          <p>Free Cancellation</p>
+          <p>Book @ ₹0 available</p>
+          <p>Breakfast available at extra charges</p>
+          <p>Located in Nagwa, this 3-star hotel offers a convenient stay near Assi Ghat.</p>
+        </div>
+
+        <div class="rating">
+          565 Ratings <span>4.2/5</span>
+        </div>
+
+        <div class="offers">
+          Bank offer | ₹656 off<br>
+          Pay using  Bank Debit cards to avail this offer
+        </div>
+
+        <div class="price">
+          <span class="old-price">₹3,600</span> ₹1,968 + ₹486 taxes & fees per night
+        </div>
+
+        <div class="login-save">
+          <a href="#">Login now & save more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="container">
   <div class="form-section">
-    <h2>Feel Free to Connect</h2>
+    <h2>Your Personal Info</h2>
 
     <div class="form-row">
       <div class="input-group">
-        <label for="name">Full Name</label>
-        <input id="name" type="text" placeholder="Enter your full name" required>
+        <label for="firstName1">First Name</label>
+        <input id="firstName1" type="text" placeholder="Enter first name">
       </div>
       <div class="input-group">
-        <label for="email">Email Address</label>
-        <input id="email" type="email" placeholder="Enter your email" required>
+        <label for="lastName1">Last Name</label>
+        <input id="lastName1" type="text" placeholder="Enter last name">
       </div>
     </div>
 
     <div class="form-row">
       <div class="input-group">
-        <label for="phone">Phone Number</label>
-        <input id="phone" type="tel" placeholder="Enter your phone number">
+        <label for="mobileNo">Mobile No.</label>
+        <input id="mobileNo" type="tel" placeholder="Enter mobile number">
       </div>
       <div class="input-group">
-        <label for="subject">Subject</label>
-        <input id="subject" type="text" placeholder="What is this about?">
+        <label for="whatsappNo">Whatsapp No.</label>
+        <input id="whatsappNo" type="tel" placeholder="Enter WhatsApp number">
       </div>
     </div>
 
     <div class="form-row">
-      <div class="input-group" style="flex: 1 1 100%;">
-        <label for="message">Your Message</label>
-        <textarea id="message" placeholder="Type your message here..."></textarea>
+      <div class="input-group">
+        <label for="city">City</label>
+        <input id="city" type="text" placeholder="Enter city">
+      </div>
+      <div class="input-group">
+        <label for="dob">Date of Birth</label>
+        <input id="dob" type="date" placeholder="MM/DD/YYYY">
       </div>
     </div>
 
-    <div class="form-row" style="justify-content: flex-start;">
-      <button type="submit" class="payment-btn">Send Message</button>
+    <div class="form-row">
+      <div class="input-group">
+        <label for="idType">Select ID Type</label>
+        <select id="idType" required>
+          <option selected disabled>Select ID Type</option>
+          <option value="Aadhaar">Aadhaar</option>
+          <option value="Pan Card">Pan Card</option>
+          <option value="Driving License">Driving Licence</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="officeUse">For Office Use Only</label>
+        <textarea id="officeUse" placeholder="Remarks or notes"></textarea>
+      </div>
     </div>
   </div>
 
-  <!-- Map & Help Info Section -->
-  <div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 20px;">
-    <div class="payment-mode">
-      <h3>Get in Touch</h3>
-      <p>📞 +91 70070 94655</p>
-      <p>📧 sridevashramtrust@gmail.com</p>
-      <p>📍 Varanasi, Uttar Pradesh, India</p>
-    </div>
-
-    <!-- Google Maps Embed -->
-    <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 3px 12px rgba(0,0,0,0.1);">
-<iframe
-  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.406225507907!2d82.98913697477336!3d25.324146226548223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2de222363511%3A0x720ce9d306ed891a!2sANNKUT%20SUPPLEMENTS%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1747238237849!5m2!1sen!2sin"
-  width="100%"
-  height="250"
-  style="border: 0;"
-  allowfullscreen=""
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-
-    </div>
+     <label for="offerSelect"><strong>Select Offer you want to pay for:</strong></label>
+      <select id="offerSelect" required>
+        <option selected disabled value="">-- Select Offer --</option>
+        <option value="hotel">🏨 Hotel Booking</option>
+        <option value="cab">🚖 Cab Booking</option>
+        <option value="tour">🧳 Tour Packages</option>
+        <option value="vip">🛕 VIP Darshan Ticket</option>
+        <option value="aarti">🪔 Ganga Aarti Ticket</option>
+        <option value="boat">🛶 Boat Booking</option>
+        <option value="flight">✈ Flight Ticket</option>
+        <option value="train">🚉 Train Ticket</option>
+      </select>
+    
+<div class="payment-mode">
+  <h3>Payment Mode</h3>
+  <div class="payment-buttons">
+    <button type="button" class="payment-btn">Razorpay</button>
   </div>
+</div>
+
+    <div class="need-help">
+      <h3>Need help?</h3>
+      <p>Phone: +917007094655</p>
+      <p>Email: sridevashramtrust@gmail.com</p>
+    </div>
+</div>
 </section>
+
 
 
 
